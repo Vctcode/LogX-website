@@ -1,48 +1,24 @@
-
 .btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-container img {
+  height: 65px;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 400px) {
+  .btn-container {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
   }
-  
-  .btn {
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    background: #0f0f0f;
-    border-radius: 12px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    padding: 8px 0;
+
+  .btn-container img {
+    height: 45px;
+    margin: 0;
   }
-  
-  .btn img {
-    width: 30px;
-    margin-right: 6px;
-  }
-  
-  .btn a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    text-decoration: none;
-    font-size: 11px;
-    color: #ffffff;
-  }
-  
-  .btn a span {
-    display: block;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  @media screen and (max-width: 400px) {
-    .btn-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-    }
-  }
+}

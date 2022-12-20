@@ -10,6 +10,7 @@ import Logo from '../../assets/LogX.svg'
 export default function Navbar() {
     function toggle() {
         navList.classList.toggle("active")
+        console.log("Workinkg button")
     }
 
     return (
@@ -26,7 +27,7 @@ export default function Navbar() {
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <div className="harm-menu">
+            <div className="harm-menu" onClick={toggle}>
                 <div className="bar"></div>
             </div>
         </div>

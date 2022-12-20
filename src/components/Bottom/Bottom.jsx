@@ -6,6 +6,10 @@ import './Bottom.css'
 // Component
 import Button from '../Button/Button'
 
+// Image
+import Mockup from '../../assets/DownloadMockup.svg'
+import Mockup2 from '../../assets/Mockup2.svg'
+
 export default function Bottom() {
     return (
         <div className="card">
@@ -56,14 +60,18 @@ export default function Bottom() {
             </div>
 
             <div className="sec-two">
-                <h3>
-                We are onboarding businesses, vendors and SME's for a delightful delivery experience
-                </h3>
-
-                <div className="btn-box">
-                    <Button />
+                <div>
+                    <h3>
+                        We are onboarding businesses, vendors and SME's for a delightful delivery experience
+                    </h3>
+                    <div className="btn-box">
+                        <Button />
+                    </div>
                 </div>
+
+                <img className="mockup-img" src={Mockup2} alt="mockup" />
+
             </div>
         </div>
-)
+    )
 }

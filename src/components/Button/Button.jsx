@@ -4,20 +4,20 @@ import React from "react";
 import './Button.css'
 
 // Images
-import PlayStore from '../../assets/playstore.png'
+import playStoreSvg from '../../assets/googlestore.svg'
+import appStoreSvg from '../../assets/applestore.svg'
 
 export default function Button() {
     return (
         <div className="btn-container">
-            <div className='btn'>
-                <img src={PlayStore} alt="" />
-                <a href="http://">Available now on <span>Google Play</span></a>
-            </div>
+            <a href="https://google.com">
+                <img src={playStoreSvg} alt="" />
+            </a>
 
-            <div className='btn'>
-                <img src={PlayStore} alt="" />
-                <a href="http://">Available now on <span>App store</span></a>
-            </div>
+            <a href="https://google.com">
+                <img src={appStoreSvg} alt="" />
+            </a>
+
         </div>
     )
 }
