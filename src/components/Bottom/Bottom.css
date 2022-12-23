@@ -120,7 +120,7 @@ h4 {
 
   .sec-two .mockup-img {
     position: relative;
-    width: 345px;
+    width: 100%;
     height: 650px;
     bottom: -100px;
     right: 0px;

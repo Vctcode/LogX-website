@@ -8,7 +8,7 @@
   margin-right: 6px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 484px) {
   .btn-container {
     display: flex;
     flex-direction: column-reverse;

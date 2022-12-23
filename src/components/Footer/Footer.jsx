@@ -21,10 +21,19 @@ export default function Footer() {
                 </div>
 
                 <div className='side'>
+                    <h3>Product</h3>
+                    <h5>Home</h5>
+                    <h5>Features</h5>
+                    <h5>How to</h5>
+                    <h5>FAQ</h5>
+                </div>
+
+                <div className='side'>
                     <h3>Company</h3>
                     <h5>Report Issue</h5>
                     <h5>Terms of Serivce</h5>
                     <h5>Privacy policy</h5>
+                    <h5>About us</h5>
                 </div>
 
                 <div className='side social'>
