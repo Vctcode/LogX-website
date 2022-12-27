@@ -30,7 +30,7 @@ export default function Navbar() {
                 className={nav.logo}
             />
             <ul className={nav.navlist}>
-                <li><a href="/" >Home</a></li>
+                <li><Link to="/" >Home</Link></li>
                 <li><a href="#">Features</a></li>
                 <li><Link to={"/learnhow"}>Learn How</Link></li>
                 <li><a href="#">Contact</a></li>
