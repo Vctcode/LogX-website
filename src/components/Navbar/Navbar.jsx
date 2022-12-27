@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //  Styles
 import nav from './Navbar.module.css'
 
@@ -32,7 +32,7 @@ export default function Navbar() {
             <ul className={nav.navlist}>
                 <li><a href="/" >Home</a></li>
                 <li><a href="#">Features</a></li>
-                <li><a href="/learnhow">Learn How</a></li>
+                <li><Link to={"/learnhow"}>Learn How</Link></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
 
             {isOpen &&
-                <nav className={nav.mobile}>
+                <div className={nav.mobile}>
 
                     <ul className={nav.mobile__navlist}>
                         <li><a href="/">Home</a></li>
@@ -49,7 +49,7 @@ export default function Navbar() {
                         <li><a href="/learnhow">Learn How</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
             }
         </nav>
     )
