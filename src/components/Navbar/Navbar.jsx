@@ -31,9 +31,9 @@ export default function Navbar() {
             />
             <ul className={nav.navlist}>
                 <li><Link to="/" >Home</Link></li>
-                <li><a href="#">Features</a></li>
+                <li><Link to="#">Features</Link></li>
                 <li><Link to={"/learnhow"}>Learn How</Link></li>
-                <li><a href="#">Contact</a></li>
+                <li><Link to="#">Contact</Link></li>
             </ul>
 
             <div className={nav.harm__menu} onClick={navHandler}>
@@ -44,10 +44,10 @@ export default function Navbar() {
                 <div className={nav.mobile}>
 
                     <ul className={nav.mobile__navlist}>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="/learnhow">Learn How</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="#">Features</Link></li>
+                        <li><Link to="/learnhow">Learn How</Link></li>
+                        <li><Link to="#">Contact</Link></li>
                     </ul>
                 </div>
             }
