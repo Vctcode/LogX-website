@@ -6,7 +6,7 @@ import hero from './Hero.module.css'
 import Button from '../Button/Button'
 
 // Images
-import HeroImg from '../../assets/hero.svg'
+// import HeroImg from '../../assets/hero.svg'
 
 
 export default function Hero() {
