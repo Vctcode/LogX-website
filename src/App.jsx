@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import { Route } from 'react-router-dom'
+import React from 'react'
+// import * as Sentry from '@sentry/react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //  Components
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
+// import Hero from './components/Hero/Hero'
 import LearnHow from './components/LearnHow/LearnHow'
-import Bottom from './components/Bottom/Bottom'
+// import SectionFour from './components/SectionFour/SectionFour'
 import Footer from './components/Footer/Footer'
 import SectionTwo from './components/Section2/Section2'
-import SectionThree from './components/Section3/Section3'
+// import SectionThree from './components/Section3/Section3'
+import Home from './pages/home/Home'
 
 
 function App() {
@@ -15,11 +17,15 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <SectionThree />
+
+      <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/learnhow' element={<LearnHow />} />
+      </Routes>
       {/* <SectionTwo /> */}
-      {/* <LearnHow /> */}
-      <Bottom />
+      </Router>
+
       <Footer />
     </div>
   )

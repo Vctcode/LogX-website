@@ -12,13 +12,12 @@ import HeroImg from '../../assets/hero.svg'
 export default function Hero() {
     return (
         <div className={hero.hero_section}>
-            {/* <img src={HerImg} alt="" className={hero.hero_img}/> */}
 
             <div className={hero.textbox}>
-                <h2>Reach The Nearest Logistics In Your Area</h2>
+                <h2>We connect you to thousands of logistics service providers near you</h2>
 
                 <p>
-                We are a Decentralised delivery system. Choose the best and nearest logistics personel around you
+                our aim is to democratize logistics, and make it seemless for all parties involved
                 </p>
 
 

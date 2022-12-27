@@ -30,18 +30,18 @@ export default function SectionThree() {
 const Data = [
     {
         img: illustration1,
-        cardHeader: "Header One to Content",
-        cardContent: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis, consequuntur quaerat id iusto sit! Voluptas, officiis tempora!"
+        cardHeader: "Time bound inclusion",
+        cardContent: "Set a deadline for package delivery as a vendor. If we fail to meet-up, we will refund you your cost. That's a promise!"
     },
     {
         img: illustration2,
-        cardHeader: "Header Two to Content",
-        cardContent: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis, consequuntur quaerat id iusto sit! Voluptas, officiis tempora!"
+        cardHeader: "Real-Time tracking",
+        cardContent: "It's your package. You deserve to know where it is at every point in time until its delivered."
     },
     {
         img: illustration3,
-        cardHeader: "Header Three to Content",
-        cardContent: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis, consequuntur quaerat id iusto sit! Voluptas, officiis tempora!"
+        cardHeader: "Decentralization",
+        cardContent: "Connect with freelancers, vehicle owners, local dispatchers. Let them compete to get your packages delivered to you."
     }
 
 ]

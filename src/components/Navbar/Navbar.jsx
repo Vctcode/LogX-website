@@ -1,6 +1,7 @@
-import React from "react";
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 //  Styles
-import './Navbar.css'
+import nav from './Navbar.module.css'
 
 // Images
 import Logo from '../../assets/LogX.svg'
@@ -8,28 +9,51 @@ import Logo from '../../assets/LogX.svg'
 
 
 export default function Navbar() {
-    function toggle() {
-        navList.classList.toggle("active")
-        console.log("Workinkg button")
+    const [isOpen, setIsOpen] = useState(false);
+    const [isActiveBar, setIsActiveBar] = useState(false);
+    const [activeLink, setActiveLink] = useState(false);
+
+    const navHandler = () => {
+        // classList.toggle("active")
+        // console.log("Workinkg button")
+        setIsActiveBar(!isActiveBar)
+
+        setIsOpen(!isOpen)
+        console.log(isOpen)
     }
 
     return (
-        <div className="navbar">
+        <nav className={nav.navbar}>
             <img
                 src={Logo}
                 alt="Log-x logo"
-                className="logo"
+                className={nav.logo}
             />
-            <ul className="navlist">
-                <li><a href="#">Home</a></li>
+            <ul className={nav.navlist}>
+                <NavLink href="/" 
+                className={({ isActive }) => 
+                (isActive ? "navlist.active" : "not-active-class"
+                )}>Home</NavLink>
                 <li><a href="#">Features</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="/learnhow">Learn How</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <div className="harm-menu" onClick={toggle}>
-                <div className="bar"></div>
+            <div className={nav.harm__menu} onClick={navHandler}>
+                <div className={isActiveBar ? nav.bar__active : nav.bar}></div>
             </div>
-        </div>
+
+            {isOpen &&
+                <nav className={nav.mobile}>
+
+                    <ul className={nav.mobile__navlist}>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="/learnhow">Learn How</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            }
+        </nav>
     )
 }
