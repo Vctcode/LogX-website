@@ -4,14 +4,6 @@
   width: 95%;
   margin: 40px auto;
   padding: 30px 80px;
-  /* background: radial-gradient(
-    80.66% 790.43% at 16.94% 32.83%,
-    #042546 41.21%,
-    rgba(18, 62, 106, 0.94) 67.81%,
-    #042546 87.2%
-  ); */
-
-  /* box-shadow: inset 0px 10px 30px rgba(0, 0, 0, 0.5); */
   color: #292929;
   background: #acd2f856;
   border-radius: 15px;
@@ -26,7 +18,6 @@
 
 .diff .container {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   margin-top: 30px;
 }
@@ -73,7 +64,7 @@
   font-size: 40px;
 }
 
-.sec_two {
+.sec__two {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -83,7 +74,7 @@
   background-color: #eeb319;
 }
 
-.sec_two h3 {
+.sec__two h3 {
   width: 60%;
   font-weight: 500;
   font-size: 36px;
@@ -92,9 +83,9 @@
   margin: 30px 0;
 }
 
-.sec_two .mockup_img {
+.sec__two .mockup__img {
   position: absolute;
-  /* width: 420px; */
+  width: 420px;
   height: 550px;
   bottom: -180px;
   right: 100px;
@@ -116,7 +107,7 @@
     line-height: 30px;
   }
 
-  .sec_two {
+  .sec__two {
     position: relative;
     display: block;
     flex-direction: column;
@@ -128,7 +119,7 @@
     width: 100%;
   }
 
-  .sec_two h3 {
+  .sec__two h3 {
     width: 100%;
     font-weight: 500;
     font-size: 28px;
@@ -138,7 +129,7 @@
     text-align: center;
   }
 
-  .sec_two .mockup_img {
+  .sec__two .mockup__img {
     position: relative;
     width: 100%;
     height: 650px;

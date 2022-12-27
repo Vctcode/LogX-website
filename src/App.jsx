@@ -9,7 +9,7 @@ import LearnHow from './pages/LearnHow/LearnHow'
 import Footer from './components/Footer/Footer'
 import SectionTwo from './components/Section2/Section2'
 // import SectionThree from './components/Section3/Section3'
-import Home from './pages/home/Home'
+import Home from './pages/Home/Home'
 
 
 function App() {
