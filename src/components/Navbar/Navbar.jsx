@@ -14,12 +14,9 @@ export default function Navbar() {
     const [activeLink, setActiveLink] = useState(false);
 
     const navHandler = () => {
-        // classList.toggle("active")
-        // console.log("Workinkg button")
         setIsActiveBar(!isActiveBar)
 
         setIsOpen(!isOpen)
-        console.log(isOpen)
     }
 
     return (
@@ -43,7 +40,7 @@ export default function Navbar() {
             {isOpen &&
                 <div className={nav.mobile}>
 
-                    <ul className={nav.mobile__navlist}>
+                    <ul className={nav.mobile__navlist} onClick={navHandler}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="#">Features</Link></li>
                         <li><Link to="/learnhow">Learn How</Link></li>
