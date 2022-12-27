@@ -30,10 +30,7 @@ export default function Navbar() {
                 className={nav.logo}
             />
             <ul className={nav.navlist}>
-                <NavLink href="/" 
-                className={({ isActive }) => 
-                (isActive ? "navlist.active" : "not-active-class"
-                )}>Home</NavLink>
+                <li><a href="/" >Home</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="/learnhow">Learn How</a></li>
                 <li><a href="#">Contact</a></li>
