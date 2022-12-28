@@ -43,7 +43,7 @@ export default function Navbar() {
                     <ul className={nav.mobile__navlist} onClick={navHandler}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="#">Features</Link></li>
-                        <li><Link to="/learnhow">Learn How</Link></li>
+                        <li><Link to={"/learnhow"}>Learn How</Link></li>
                         <li><Link to="#">Contact</Link></li>
                     </ul>
                 </div>
