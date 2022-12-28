@@ -39,6 +39,10 @@
   font-size: 14px;
 }
 
+.side h5 a {
+  margin: 0;
+}
+
 .social {
   width: 100%;
   align-self: flex-start;

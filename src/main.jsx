@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Routes>
         <Route path='/' exact element={<Home />} />
-      <Route path={'/learnhow'} exact element={<LearnHow />} />
+        <Route path={'/learnhow'} exact element={<LearnHow />} />
       </Routes>
       {/* <SectionTwo /> */}
 

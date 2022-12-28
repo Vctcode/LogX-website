@@ -15,7 +15,7 @@ export default function Footer() {
             <div className={ft.footer_menu}>
                 <div className={ft.side}>
                     <h3>Contact us:</h3>
-                    <a href="mailto:logtechx@gmail.com">Logtechx@gmail.com</a>
+                    <a href="mailto:contact@logtechx.com">contact@logtechx.com</a>
                     <a href="tel:+234 810 865 1494">+234 810 865 1494</a>
                     <a href="tel:+234 701 342 3935">+234 701 342 3935</a>
                 </div>
@@ -30,7 +30,7 @@ export default function Footer() {
 
                 <div className={ft.side}>
                     <h3>Company</h3>
-                    <h5>Report Issue</h5>
+                    <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
                     <h5>Terms of Serivce</h5>
                     <h5>Privacy policy</h5>
                     <h5>About us</h5>

@@ -41,7 +41,7 @@ const Data = [
     {
         img: illustration3,
         cardHeader: "Decentralization",
-        cardContent: "Connect with freelancers, vehicle owners, local dispatchers. Let them compete to get your packages delivered to you."
+        cardContent: "Connect with freelancers, vehicle owners, local dispatchers. Let them compete to get your packages delivered for you."
     }
 
 ]

@@ -3,7 +3,7 @@ import SectionThree from "../../components/Section3/Section3";
 import SectionFour from "../../components/SectionFour/Section4";
 
 
-function Home() {
+export default function Home() {
     return (
         <>
             <Hero />
@@ -13,5 +13,3 @@ function Home() {
 
     )
 }
-
-export default Home;
