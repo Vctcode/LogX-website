@@ -1,56 +1,66 @@
 import ft from './Footer.module.css'
+import { IconContext } from 'react-icons'
 // Images
 import Logo from '../../assets/logx-logo.svg'
 import { Link } from 'react-router-dom'
-
+// import { twitter } from 'react-icons/fa'
+import { FiTwitter } from 'react-icons/fi'
+import { FiInstagram } from 'react-icons/fi'
+import { FiLinkedin } from 'react-icons/fi'
 
 export default function Footer() {
     return (
-        <div className={ft.footer}>
-            <img
-                src={Logo}
-                alt="Log-x logo"
-                className={ft.footer_logo}
-            />
+        <IconContext.Provider value={{ color: '#fff', size: '24px',}}>
 
-            <div className={ft.footer_menu}>
-                <div className={ft.side}>
-                    <h3>Contact us:</h3>
-                    <a href="mailto:contact@logtechx.com">contact@logtechx.com</a>
-                    <a href="tel:+234 810 865 1494">+234 810 865 1494</a>
-                    <a href="tel:+234 701 342 3935">+234 701 342 3935</a>
-                </div>
+            <div className={ft.footer}>
+                <img
+                    src={Logo}
+                    alt="Log-x logo"
+                    className={ft.footer_logo}
+                />
 
-                <div className={ft.side}>
-                    <h3>Product</h3>
-                    <h5><Link to={'/'}>Home</Link></h5>
-                    <h5><Link to={'/features'}>Features</Link></h5>
-                    <h5><Link to={'/demo'}>Demo</Link></h5>
-                    <h5><Link to={'/faq'}>FAQ</Link></h5>
-                </div>
-
-                <div className={ft.side}>
-                    <h3>Company</h3>
-                    <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
-                    <h5><Link to={'/'}>Terms of Serivce</Link></h5>
-                    <h5><Link to={'/privacy-policy'}>Privacy policy</Link></h5>
-                    <h5><Link to={'/about-us'}>About us</Link></h5>
-                </div>
-
-                <div className={ft.side}>
-                    <div className={ft.social}>
-                    <h3>Follow us:</h3>
-                    <div className={ft.social_icon}>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                <div className={ft.footer_menu}>
+                    <div className={ft.side}>
+                        <h3>Contact us:</h3>
+                        <a href="mailto:contact@logtechx.com">contact@logtechx.com</a>
+                        <a href="tel:+234 810 865 1494">+234 810 865 1494</a>
+                        <a href="tel:+234 701 342 3935">+234 701 342 3935</a>
                     </div>
+
+                    <div className={ft.side}>
+                        <h3>Product</h3>
+                        <h5><Link to={'/'}>Home</Link></h5>
+                        <h5><Link to={'/features'}>Features</Link></h5>
+                        <h5><Link to={'/demo'}>Demo</Link></h5>
+                        <h5><Link to={'/faq'}>FAQ</Link></h5>
                     </div>
+
+                    <div className={ft.side}>
+                        <h3>Company</h3>
+                        <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
+                        <h5><Link to={'/'}>Terms of Serivce</Link></h5>
+                        <h5><Link to={'/privacy-policy'}>Privacy policy</Link></h5>
+                        <h5><Link to={'/about-us'}>About us</Link></h5>
+                    </div>
+
+                    <div className={ft.side}>
+                        <div className={ft.social}>
+                            <h3>Follow us:</h3>
+                            <div className={ft.social_icon}>
+                                <a href="https://www.twitter.com/"><FiTwitter /></a>
+                                <a href="https://www.instagram.com/"><FiInstagram /></a>
+                                <a href="https://www.linkedin.com"> <FiLinkedin /></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+                <h6>Copyright © 2022 Log-X. All Rights Reserved.</h6>
 
             </div>
-            <h6>Copyright © 2022 Log-X. All Rights Reserved.</h6>
+        </IconContext.Provider>
 
-        </div>
     )
 }
