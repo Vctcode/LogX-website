@@ -23,18 +23,18 @@ export default function Footer() {
 
                 <div className={ft.side}>
                     <h3>Product</h3>
-                    <h5>Home</h5>
-                    <h5>Features</h5>
-                    <h5>How to</h5>
+                    <h5><Link to={'/'}>Home</Link></h5>
+                    <h5><Link to={'/features'}>Features</Link></h5>
+                    <h5><Link to={'/demo'}>Demo</Link></h5>
                     <h5><Link to={'/faq'}>FAQ</Link></h5>
                 </div>
 
                 <div className={ft.side}>
                     <h3>Company</h3>
                     <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
-                    <h5>Terms of Serivce</h5>
-                    <h5>Privacy policy</h5>
-                    <h5>About us</h5>
+                    <h5><Link to={'/'}>Terms of Serivce</Link></h5>
+                    <h5><Link to={'/privacy-policy'}>Privacy policy</Link></h5>
+                    <h5><Link to={'/about-us'}>About us</Link></h5>
                 </div>
 
                 <div className={ft.side}>

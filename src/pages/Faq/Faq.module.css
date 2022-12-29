@@ -1,5 +1,5 @@
 .faq {
-  margin-top: 5rem;
+  margin: 5rem 0 5rem;
 }
 
 .sender__section,
@@ -41,6 +41,7 @@
 
 .answer {
   font-size: 16px;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -83,6 +84,7 @@
   }
 
   .answer {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
