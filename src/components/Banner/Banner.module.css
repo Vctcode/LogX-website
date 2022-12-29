@@ -1,0 +1,25 @@
+.banner {
+  padding: 10rem 0 8rem;
+  background: #eeb319;
+  width: 100%;
+}
+
+.banner h2 {
+  text-align: center;
+  font-size: 56px;
+  width: 550px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 8rem 0 6rem;
+  }
+
+  .banner h2 {
+    text-align: center;
+    font-size: 32px;
+    width: 350px;
+    margin: 0;
+  }
+}

@@ -6,6 +6,7 @@ import Home from './pages/LandingPage/Home'
 import LearnHow from './pages/LearnHow/LearnHow'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Faq from './pages/Faq/Faq'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path={'/learnhow'} exact element={<LearnHow />} />
+        <Route path='/faq' exact element={<Faq />} />
       </Routes>
       {/* <SectionTwo /> */}
 

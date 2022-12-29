@@ -1,6 +1,7 @@
 import ft from './Footer.module.css'
 // Images
 import Logo from '../../assets/logx-logo.svg'
+import { Link } from 'react-router-dom'
 
 
 export default function Footer() {
@@ -25,7 +26,7 @@ export default function Footer() {
                     <h5>Home</h5>
                     <h5>Features</h5>
                     <h5>How to</h5>
-                    <h5>FAQ</h5>
+                    <h5><Link to={'/faq'}>FAQ</Link></h5>
                 </div>
 
                 <div className={ft.side}>
