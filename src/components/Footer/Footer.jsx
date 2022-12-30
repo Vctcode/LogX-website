@@ -47,9 +47,9 @@ export default function Footer() {
                         <div className={ft.social}>
                             <h3>Follow us:</h3>
                             <div className={ft.social_icon}>
-                                <a href="https://www.twitter.com/"><FiTwitter /></a>
-                                <a href="https://www.instagram.com/"><FiInstagram /></a>
-                                <a href="https://www.linkedin.com"> <FiLinkedin /></a>
+                                <a href="https://www.twitter.com/logx_tech"><FiTwitter /></a>
+                                <a href="https://www.instagram.com/logx_tech"><FiInstagram /></a>
+                                <a href="https://www.linkedin.com/company/logx-tech"> <FiLinkedin /></a>
 
                             </div>
                         </div>
