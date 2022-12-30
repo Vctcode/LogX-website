@@ -7,6 +7,7 @@ import Demo from './pages/Demo/Demo'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Faq from './pages/Faq/Faq'
+import Privacy from './pages/Privacy/Privacy'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' exact element={<Home />} />
         <Route path={'/demo'} exact element={<Demo />} />
         <Route path='/faq' exact element={<Faq />} />
+        <Route path='/privacy-policy' exact element={<Privacy />} />
       </Routes>
       {/* <SectionTwo /> */}
 
