@@ -8,19 +8,23 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Faq from './pages/Faq/Faq'
 import Privacy from './pages/Privacy/Privacy'
+import { HashLink } from 'react-router-hash-link'
+import ScrollToTop from './components/ScrollToTop'
+import AboutUs from './pages/AboutUs/AboutUs'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Navbar />
-
+      <ScrollToTop />
 
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path={'/demo'} exact element={<Demo />} />
         <Route path='/faq' exact element={<Faq />} />
         <Route path='/privacy-policy' exact element={<Privacy />} />
+        <Route path='/about-us' exact element={<AboutUs />} />
       </Routes>
       {/* <SectionTwo /> */}
 

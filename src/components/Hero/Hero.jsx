@@ -11,7 +11,7 @@ import Button from '../Button/Button'
 
 export default function Hero() {
     return (
-        <div className={hero.hero_section}>
+        <div className={hero.hero_section} id="home">
 
             <div className={hero.textbox}>
                 <h2>We connect you to thousands of logistics service providers near you</h2>

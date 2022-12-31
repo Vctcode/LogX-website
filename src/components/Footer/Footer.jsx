@@ -12,7 +12,7 @@ export default function Footer() {
     return (
         <IconContext.Provider value={{ color: '#fff', size: '24px',}}>
 
-            <div className={ft.footer}>
+            <div className={ft.footer}  id="contact">
                 <img
                     src={Logo}
                     alt="Log-x logo"
@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className={ft.side}>
                         <h3>Product</h3>
                         <h5><Link to={'/'}>Home</Link></h5>
-                        <h5><Link to={'/features'}>Features</Link></h5>
+                        {/* <h5><Link to={'/features'}>Features</Link></h5> */}
                         <h5><Link to={'/demo'}>Demo</Link></h5>
                         <h5><Link to={'/faq'}>FAQ</Link></h5>
                     </div>
@@ -38,7 +38,7 @@ export default function Footer() {
                     <div className={ft.side}>
                         <h3>Company</h3>
                         <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
-                        <h5><Link to={'/'}>Terms of Serivce</Link></h5>
+                        {/* <h5><Link to={'/terms-of-service'}>Terms of Serivce</Link></h5> */}
                         <h5><Link to={'/privacy-policy'}>Privacy policy</Link></h5>
                         <h5><Link to={'/about-us'}>About us</Link></h5>
                     </div>

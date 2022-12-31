@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 //  Styles
 import nav from './Navbar.module.css'
 
@@ -28,9 +29,11 @@ export default function Navbar() {
             />
             <ul className={nav.navlist}>
                 <li><Link to="/" >Home</Link></li>
-                <li><Link to="#">Features</Link></li>
+                {/* <li><HashLink to="#fts" smooth>Features</HashLink></li> */}
+                {/* <li><Link to={"/features"}>Features</Link></li> */}
                 <li><Link to={"/demo"}>Demo</Link></li>
-                <li><Link to="#">Contact</Link></li>
+                <li><Link to={"/faq"}>FAQ</Link></li>
+                <li><HashLink to="#contact" smooth>Contact</HashLink></li>
             </ul>
 
             <div className={nav.harm__menu} onClick={navHandler}>
@@ -42,9 +45,10 @@ export default function Navbar() {
 
                     <ul className={nav.mobile__navlist} onClick={navHandler}>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="#">Features</Link></li>
+                        {/* <li><Link to={`${"/features"}`}>Features</Link></li> */}
                         <li><Link to={`${"/demo"}`}>Demo</Link></li>
-                        <li><Link to="#">Contact</Link></li>
+                        <li><Link to={`${"/faq"}`}>FAQ</Link></li>
+                        <li><HashLink to={`${"#contact"}`} smooth>Contact</HashLink></li>
                     </ul>
                 </div>
             }

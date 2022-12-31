@@ -1,7 +1,14 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+
 
 // Styles
-import s from './Section4.module.css'
+import s from './Section4.module.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 // Component
 import Button from '../Button/Button'
@@ -16,18 +23,117 @@ export default function SectionFour() {
             <div className={s.diff}>
                 <h4>Choose your delivery mode</h4>
 
-                <div className={s.container}>
+                {/* <div className={s.container}>
                     {Modes.map((mode, index) => {
                         return (
-                            <div key={index} className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>{mode.header}</h6>
-                                <p>{mode.content}</p>
-                            </div>
+                            <Swiper
+                                spaceBetween={50}
+                                slidesPerView={3}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                            >
+                                <SwiperSlide>
+                                    <div key={index} className={s.item}>
+                                        <div className={s.icon}></div>
+                                        <h6>{mode.header}</h6>
+                                        <p>{mode.content}</p>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
                         )
                     })}
+                </div> */}
+
+                <div className={s.container}>
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Walk & Cycle</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Bike</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Car</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Truck</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
                 </div>
+
+                <div className={s.mobilecontainer}>
+
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        // navigation
+                        pagination={{ clickable: true }}
+                        // scrollbar={{ draggable: true }}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        <SwiperSlide>
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Walk & Cycle</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Bike</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Car</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className={s.item}>
+                                <div className={s.icon}></div>
+                                <h6>Truck</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+
             </div>
+
+            {/* <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <SwiperSlide><div className={s.item}>
+                    <div className={s.icon}></div>
+                    <h6>Legediz</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptatum.</p>
+                </div></SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+                ...
+            </Swiper> */}
 
             {/* <div className={s.stats}>
                 <div>

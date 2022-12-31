@@ -27,7 +27,7 @@ export default function Faq() {
     return (
         <IconContext.Provider value={{ color: '#000', size: '16px' }}>
 
-            <Banner title="Frequently Asked Questions" />
+            <Banner title="Frequently Asked Questions" id="faq" />
 
             <div className={fq.faq}>
                 <div className={fq.sender__section}>
