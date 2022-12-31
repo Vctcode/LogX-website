@@ -1,0 +1,23 @@
+.privacyPage {
+    margin: 5rem;
+}
+
+.privacyPage div {
+    margin-top: 30px;
+}
+
+.privacyPage div li {
+    text-indent: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+@media screen and (max-width: 767px) {
+    .privacyPage {
+        margin: 2rem;
+    }
+    
+    .privacyPage div {
+        margin-top: 20px;
+    }
+}
