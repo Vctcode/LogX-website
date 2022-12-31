@@ -35,8 +35,8 @@ export default function Faq() {
 
                     {SenderFaqs.map((faq, index) => {
                         return (
-                            <div className={fq.ctn}>
-                                <div className={fq.question} onClick={() => senderToggle(index)} key={index}>
+                            <div className={fq.ctn}  key={index}>
+                                <div className={fq.question} onClick={() => senderToggle(index)} >
                                     <h5 className={fq.question__text}>{faq.qtn}</h5>
                                     <span>{senderAnswer === index ? <FiMinus /> : <FiPlus />}</span>
                                 </div>
@@ -53,8 +53,8 @@ export default function Faq() {
 
                     {DeliveryFaqs.map((item, index) => {
                         return (
-                            <div className={fq.ctn}>
-                                <div className={fq.question} onClick={() => deliveryToggle(index)} key={index}>
+                            <div className={fq.ctn} key={index}>
+                                <div className={fq.question} onClick={() => deliveryToggle(index)} >
                                     <h5 className={fq.question__text}>{item.qtn}</h5>
                                     <span>{deliveryAnswer === index ? <FiMinus /> : <FiPlus />}</span>
                                 </div>
