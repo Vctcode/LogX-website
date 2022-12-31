@@ -12,7 +12,7 @@ import Logo from '../../assets/LogX.svg'
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isActiveBar, setIsActiveBar] = useState(false);
-    const [activeLink, setActiveLink] = useState(false);
+    // const [activeLink, setActiveLink] = useState(false);
 
     const navHandler = () => {
         setIsActiveBar(!isActiveBar)
