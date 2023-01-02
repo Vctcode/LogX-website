@@ -20,13 +20,13 @@ export default function SectionThree() {
             {Data.map((item, index) => {
                 return (
                     <div key={index} className={s3.ctn} >
-                        <div className={s3.imgBox} data-aos="fade-down" data-aos-duration="1500">
+                        <div className={s3.imgBox} data-aos="fade-up" data-aos-duration="1500">
                             <img src={item.img} alt="illustrator" className={s3.img} />
                         </div>
 
-                        <div className={s3.textBox}>
-                            <h4 className={s3.cardHeader}  data-aos="fade-right" data-aos-duration="2000">{item.cardHeader}</h4>
-                            <p className={s3.cardContent}  data-aos="fade-left" data-aos-duration="2000">{item.cardContent}</p>
+                        <div className={s3.textBox}  data-aos="fade-down" data-aos-duration="2000">
+                            <h4 className={s3.cardHeader}>{item.cardHeader}</h4>
+                            <p className={s3.cardContent}>{item.cardContent}</p>
                         </div>
                     </div>
                 )

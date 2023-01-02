@@ -209,7 +209,7 @@ export default function SectionFour() {
                     </div>
                 </div>
 
-                <img className={s.mockup__img} src={Mockup2} alt="mockup" data-aos="fade-left"  data-aos-duration="2500" data-aos-easing="linear" />
+                <img className={s.mockup__img} src={Mockup2} alt="mockup" data-aos="fade-up"  data-aos-duration="2500" data-aos-easing="linear" />
 
             </div>
         </div>
