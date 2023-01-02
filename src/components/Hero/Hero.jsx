@@ -7,6 +7,8 @@ import Button from '../Button/Button'
 
 // Images
 // import HeroImg from '../../assets/hero.svg'
+import HeroImg from '../../assets/hero-mockup.svg';
+
 
 
 export default function Hero() {
@@ -24,7 +26,9 @@ export default function Hero() {
                 <Button />
             </div>
 
-            <div className={hero.box}></div>
+            <div className={hero.box}>
+                <img src={HeroImg} alt="log-x" />
+            </div>
 
         </div>
     )
