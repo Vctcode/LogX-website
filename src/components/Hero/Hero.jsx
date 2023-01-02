@@ -7,7 +7,8 @@ import Button from '../Button/Button'
 
 // Images
 // import HeroImg from '../../assets/hero.svg'
-import HeroImg from '../../assets/hero-mockup.svg';
+// import HeroImg from '../../assets/hero-mockup.svg';
+import HeroImg from '../../assets/hero-mockup.png';
 
 
 
