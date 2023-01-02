@@ -16,6 +16,11 @@ import Button from '../Button/Button'
 // Image
 // import Mockup from '../../assets/DownloadMockup.svg'
 import Mockup2 from '../../assets/Mockup2.svg'
+import Self from '../../assets/Self-carriage2.svg'
+import Truck from '../../assets/Truck2.svg'
+import Bike from '../../assets/Bike2.svg'
+import Car from '../../assets/Car2.svg'
+import Cycle from '../../assets/Cycle2.svg'
 
 export default function SectionFour() {
     return (
@@ -45,29 +50,45 @@ export default function SectionFour() {
                 </div> */}
 
                 <div className={s.container}>
-                            <div className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>Walk & Cycle</h6>
-                                {/* <p>{mode.content}</p> */}
-                            </div>
+                    <div className={s.item}>
+                        <div className={s.icon}>
+                            <img src={Self} alt="mode" />
+                        </div>
+                        <h6>Self-Carriage</h6>
+                        {/* <p>{mode.content}</p> */}
+                    </div>
 
-                            <div className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>Bike</h6>
-                                {/* <p>{mode.content}</p> */}
-                            </div>
+                    <div className={s.item}>
+                        <div className={s.icon}>
+                            <img src={Cycle} alt="mode" />
+                        </div>
+                        <h6>Cycle</h6>
+                        {/* <p>{mode.content}</p> */}
+                    </div>
 
-                            <div className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>Car</h6>
-                                {/* <p>{mode.content}</p> */}
-                            </div>
+                    <div className={s.item}>
+                        <div className={s.icon}>
+                            <img src={Bike} alt="mode" />
+                        </div>
+                        <h6>Bike</h6>
+                        {/* <p>{mode.content}</p> */}
+                    </div>
 
-                            <div className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>Truck</h6>
-                                {/* <p>{mode.content}</p> */}
-                            </div>
+                    <div className={s.item}>
+                        <div className={s.icon}>
+                            <img src={Car} alt="mode" />
+                        </div>
+                        <h6>Car</h6>
+                        {/* <p>{mode.content}</p> */}
+                    </div>
+
+                    <div className={s.item}>
+                        <div className={s.icon}>
+                            <img src={Truck} alt="mode" />
+                        </div>
+                        <h6>Truck</h6>
+                        {/* <p>{mode.content}</p> */}
+                    </div>
                 </div>
 
                 <div className={s.mobilecontainer}>
@@ -78,21 +99,35 @@ export default function SectionFour() {
                         slidesPerView={1}
                         // navigation
                         pagination={{ clickable: true }}
-                        // scrollbar={{ draggable: true }}
-                        // onSlideChange={() => console.log('slide change')}
-                        // onSwiper={(swiper) => console.log(swiper)}
+                    // scrollbar={{ draggable: true }}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide>
                             <div className={s.item}>
-                                <div className={s.icon}></div>
-                                <h6>Walk & Cycle</h6>
+                                <div className={s.icon}>
+                                    <img src={Self} alt="mode" />
+                                </div>
+                                <h6>Self-Carriage</h6>
                                 {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div className={s.item}>
-                                <div className={s.icon}></div>
+                                <div className={s.icon}>
+                                    <img src={Cycle} alt="mode" />
+                                </div>
+                                <h6>Cycle</h6>
+                                {/* <p>{mode.content}</p> */}
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className={s.item}>
+                                <div className={s.icon}>
+                                    <img src={Bike} alt="mode" />
+                                </div>
                                 <h6>Bike</h6>
                                 {/* <p>{mode.content}</p> */}
                             </div>
@@ -100,7 +135,9 @@ export default function SectionFour() {
 
                         <SwiperSlide>
                             <div className={s.item}>
-                                <div className={s.icon}></div>
+                                <div className={s.icon}>
+                                    <img src={Car} alt="mode" />
+                                </div>
                                 <h6>Car</h6>
                                 {/* <p>{mode.content}</p> */}
                             </div>
@@ -108,7 +145,9 @@ export default function SectionFour() {
 
                         <SwiperSlide>
                             <div className={s.item}>
-                                <div className={s.icon}></div>
+                                <div className={s.icon}>
+                                    <img src={Truck} alt="mode" />
+                                </div>
                                 <h6>Truck</h6>
                                 {/* <p>{mode.content}</p> */}
                             </div>
