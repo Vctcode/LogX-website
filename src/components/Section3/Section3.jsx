@@ -1,24 +1,32 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 // Styles
 import s3 from './Section3.module.css';
+import 'aos/dist/aos.css';
 
 // Images
 import illustration1 from '../../assets/ils1.svg';
 import illustration2 from '../../assets/ils2.svg';
 import illustration3 from '../../assets/ils3.svg';
 
+
 export default function SectionThree() {
+    
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className={s3.sectionThree} id="fts">
             {Data.map((item, index) => {
                 return (
-                    <div key={index} className={s3.ctn}>
-                        <div className={s3.imgBox}>
+                    <div key={index} className={s3.ctn} >
+                        <div className={s3.imgBox} data-aos="fade-down" data-aos-duration="1500">
                             <img src={item.img} alt="illustrator" className={s3.img} />
                         </div>
 
                         <div className={s3.textBox}>
-                            <h4 className={s3.cardHeader}>{item.cardHeader}</h4>
-                            <p className={s3.cardContent}>{item.cardContent}</p>
+                            <h4 className={s3.cardHeader}  data-aos="fade-right" data-aos-duration="2000">{item.cardHeader}</h4>
+                            <p className={s3.cardContent}  data-aos="fade-left" data-aos-duration="2000">{item.cardContent}</p>
                         </div>
                     </div>
                 )

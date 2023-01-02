@@ -6,7 +6,7 @@ import SectionFour from "../../components/SectionFour/Section4";
 export default function Home() {
     return (
         <>
-            <Hero />
+            <Hero  />
             <SectionThree />
             <SectionFour />
         </>

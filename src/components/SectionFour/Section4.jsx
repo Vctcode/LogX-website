@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import AOS from 'aos'
 
 
 
@@ -9,6 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'aos/dist/aos.css';
 
 // Component
 import Button from '../Button/Button'
@@ -23,8 +26,12 @@ import Car from '../../assets/Car2.svg'
 import Cycle from '../../assets/Cycle2.svg'
 
 export default function SectionFour() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className={s.card}>
+        <div className={s.card} data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
             <div className={s.diff}>
                 <h4>Choose your delivery mode</h4>
 
@@ -194,7 +201,7 @@ export default function SectionFour() {
 
             <div className={s.sec__two}>
                 <div>
-                    <h3>
+                    <h3 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease-in-sine">
                         We are onboarding businesses, vendors and SME's for a delightful delivery experience
                     </h3>
                     <div className={s.btn__box}>
@@ -202,7 +209,7 @@ export default function SectionFour() {
                     </div>
                 </div>
 
-                <img className={s.mockup__img} src={Mockup2} alt="mockup" />
+                <img className={s.mockup__img} src={Mockup2} alt="mockup" data-aos="fade-left"  data-aos-duration="2500" data-aos-easing="linear" />
 
             </div>
         </div>
