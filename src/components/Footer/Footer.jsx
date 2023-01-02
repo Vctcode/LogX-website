@@ -10,14 +10,20 @@ import { FiLinkedin } from 'react-icons/fi'
 
 export default function Footer() {
     return (
-        <IconContext.Provider value={{ color: '#fff', size: '24px',}}>
+        <IconContext.Provider value={{ color: '#fff', size: '24px', }}>
 
-            <div className={ft.footer}  id="contact">
-                <img
-                    src={Logo}
-                    alt="Log-x logo"
-                    className={ft.footer_logo}
-                />
+            <div className={ft.footer} id="contact">
+                <div className={ft.about}>
+                    <img
+                        src={Logo}
+                        alt="Log-x logo"
+                        className={ft.footer_logo}
+                    />
+
+                    <p>
+                        LogX is a platform that links and connects vendors, SMEs and individuals with logistics companies and other third party logisitics service providers in no time.
+                    </p>
+                </div>
 
                 <div className={ft.footer_menu}>
                     <div className={ft.side}>
@@ -38,9 +44,9 @@ export default function Footer() {
                     <div className={ft.side}>
                         <h3>Company</h3>
                         <h5><a href="mailto:contact@logtechx.com">Report Issue</a></h5>
-                        {/* <h5><Link to={'/terms-of-service'}>Terms of Serivce</Link></h5> */}
                         <h5><Link to={'/privacy-policy'}>Privacy policy</Link></h5>
-                        <h5><Link to={'/about-us'}>About us</Link></h5>
+                        {/* <h5><Link to={'/terms-of-service'}>Terms of Serivce</Link></h5> */}
+                        {/* <h5><Link to={'/about-us'}>About us</Link></h5> */}
                     </div>
 
                     <div className={ft.side}>
