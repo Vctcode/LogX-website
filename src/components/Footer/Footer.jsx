@@ -9,6 +9,7 @@ import { FiInstagram } from 'react-icons/fi'
 import { FiLinkedin } from 'react-icons/fi'
 
 export default function Footer() {
+    const Year = new Date().getFullYear()
     return (
         <IconContext.Provider value={{ color: '#fff', size: '24px', }}>
 
@@ -63,7 +64,7 @@ export default function Footer() {
 
 
                 </div>
-                <h6>Copyright © 2022 Log-X. All Rights Reserved.</h6>
+                <h6>Copyright © {Year} Log-X. All Rights Reserved.</h6>
 
             </div>
         </IconContext.Provider>
