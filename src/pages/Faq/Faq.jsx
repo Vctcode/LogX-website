@@ -7,7 +7,6 @@ import Banner from '../../components/Banner/Banner'
 export default function Faq() {
     const [senderAnswer, setSenderAnswer] = useState(false)
     const [deliveryAnswer, setDeliveryAnswer] = useState(false)
-    // const [quesNo, setQuesNo] = useState(false)
 
     const senderToggle = (index) => {
         if (senderAnswer === index) {
@@ -35,7 +34,7 @@ export default function Faq() {
 
                     {SenderFaqs.map((faq, index) => {
                         return (
-                            <div className={fq.ctn}  key={index}>
+                            <div className={fq.ctn} key={index}>
                                 <div className={fq.question} onClick={() => senderToggle(index)} >
                                     <h5 className={fq.question__text}>{faq.qtn}</h5>
                                     <span>{senderAnswer === index ? <FiMinus /> : <FiPlus />}</span>
@@ -112,7 +111,7 @@ const DeliveryFaqs = [
     {
         qtn: "How does the delivery personnel get orders ?",
         ans: 'The delivery personnel only needs to stay online on the "Log-x App" and accept requests from Customers. The delivery personnel will always get notified for every request within 15km from your location.',
-    }, 
+    },
     {
         qtn: "How does the delivery personnel get orders ?",
         ans: "It is absolutely free.",

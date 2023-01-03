@@ -3,7 +3,6 @@ import { IconContext } from 'react-icons'
 // Images
 import Logo from '../../assets/logx-logo.svg'
 import { Link } from 'react-router-dom'
-// import { twitter } from 'react-icons/fa'
 import { FiTwitter } from 'react-icons/fi'
 import { FiInstagram } from 'react-icons/fi'
 import { FiLinkedin } from 'react-icons/fi'

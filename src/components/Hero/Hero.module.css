@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 40px;
-  width: 100%;  
+  width: 100%;
   margin-top: 4.5rem;
   padding: 5rem 5rem;
   background: #fafafa;
@@ -22,8 +22,7 @@
   font-weight: 700;
   font-size: 56px;
   line-height: 64px;
-  color: 
-  #0e0e0e;
+  color: #0e0e0e;
   text-transform: none;
 }
 
@@ -36,7 +35,7 @@
   margin-bottom: 30px;
 }
 
-.hero_section .box{
+.hero_section .box {
   align-self: baseline;
   display: flex;
   width: 400px;
@@ -45,7 +44,7 @@
   align-items: center;
 }
 
-.hero_section .box img{
+.hero_section .box img {
   width: 100%;
 }
 
@@ -55,11 +54,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 100vh; */
     justify-content: center;
     padding: 1.5rem 2rem 1.5rem;
   }
-  
+
   .textbox {
     display: flex;
     flex-direction: column;
@@ -67,14 +65,14 @@
     align-items: center;
     width: 100%;
   }
-  
+
   .textbox h2 {
     text-align: center;
     font-size: 32px;
     line-height: 38px;
     color: #000;
   }
-  
+
   .textbox p {
     text-align: center;
     width: fit-content;

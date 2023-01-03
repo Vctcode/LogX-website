@@ -8,8 +8,8 @@ import illustration3 from '../../assets/ils3.svg';
 
 
 export default function SectionThree() {
-    
-    
+
+
     return (
         <div className={s3.sectionThree} id="fts">
             {Data.map((item, index) => {

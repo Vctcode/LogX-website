@@ -16,7 +16,7 @@ export default function Button() {
     }, [])
 
     return (
-        <div className="btn-container" data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease-in-sine">
+        <div className="btn-container" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
             <a href="https://play.google.com/store/apps/details?id=com.logx">
                 <img src={playStoreSvg} alt="playstore" />
             </a>

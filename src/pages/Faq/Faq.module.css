@@ -20,7 +20,6 @@
 }
 
 .ctn {
-  /* border: 1px solid black; */
   width: 650px;
   background: rgba(214, 214, 214, 0.472);
   padding: 20px;
@@ -65,7 +64,6 @@
   }
 
   .ctn {
-    /* border: 1px solid black; */
     width: 90%;
     background: rgba(214, 214, 214, 0.472);
     padding: 16px;

@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import AOS from 'aos'
 
-
-
 // Styles
 import s from './Section4.module.css';
 import 'swiper/css';
@@ -40,7 +38,6 @@ export default function SectionFour() {
                             <img src={Self} alt="mode" />
                         </div>
                         <h6>Self-Carriage</h6>
-                        {/* <p>{mode.content}</p> */}
                     </div>
 
                     <div className={s.item}>
@@ -48,7 +45,6 @@ export default function SectionFour() {
                             <img src={Cycle} alt="mode" />
                         </div>
                         <h6>Cycle</h6>
-                        {/* <p>{mode.content}</p> */}
                     </div>
 
                     <div className={s.item}>
@@ -56,7 +52,6 @@ export default function SectionFour() {
                             <img src={Bike} alt="mode" />
                         </div>
                         <h6>Bike</h6>
-                        {/* <p>{mode.content}</p> */}
                     </div>
 
                     <div className={s.item}>
@@ -64,7 +59,6 @@ export default function SectionFour() {
                             <img src={Car} alt="mode" />
                         </div>
                         <h6>Car</h6>
-                        {/* <p>{mode.content}</p> */}
                     </div>
 
                     <div className={s.item}>
@@ -72,7 +66,6 @@ export default function SectionFour() {
                             <img src={Truck} alt="mode" />
                         </div>
                         <h6>Truck</h6>
-                        {/* <p>{mode.content}</p> */}
                     </div>
                 </div>
 
@@ -90,7 +83,6 @@ export default function SectionFour() {
                                     <img src={Self} alt="mode" />
                                 </div>
                                 <h6>Self-Carriage</h6>
-                                {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
 
@@ -100,7 +92,6 @@ export default function SectionFour() {
                                     <img src={Cycle} alt="mode" />
                                 </div>
                                 <h6>Cycle</h6>
-                                {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
 
@@ -110,7 +101,6 @@ export default function SectionFour() {
                                     <img src={Bike} alt="mode" />
                                 </div>
                                 <h6>Bike</h6>
-                                {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
 
@@ -120,7 +110,6 @@ export default function SectionFour() {
                                     <img src={Car} alt="mode" />
                                 </div>
                                 <h6>Car</h6>
-                                {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
 
@@ -130,7 +119,6 @@ export default function SectionFour() {
                                     <img src={Truck} alt="mode" />
                                 </div>
                                 <h6>Truck</h6>
-                                {/* <p>{mode.content}</p> */}
                             </div>
                         </SwiperSlide>
                     </Swiper>
@@ -146,19 +134,19 @@ export default function SectionFour() {
 
                 <div>
                     <h6>100+</h6>
-                    <span>downloads</span>
+                    <span>transactions</span>
                 </div>
 
                 <div>
-                    <h6>100+</h6>
-                    <span>downloads</span>
+                    <h6>90+</h6>
+                    <span>satistied customers</span>
                 </div>
 
             </div> */}
 
             <div className={s.sec__two}>
                 <div>
-                    <h3 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                         We are onboarding businesses, vendors and SME's for a delightful delivery experience
                     </h3>
                     <div className={s.btn__box}>
@@ -166,32 +154,9 @@ export default function SectionFour() {
                     </div>
                 </div>
 
-                <img className={s.mockup__img} src={Mockup} alt="mockup" data-aos="fade-up"  data-aos-duration="2500" data-aos-easing="linear" />
+                <img className={s.mockup__img} src={Mockup} alt="mockup" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="linear" />
 
             </div>
         </div>
     )
 }
-
-const Modes = [
-    {
-        img: "",
-        header: "Walk & Cycle",
-        // content: " Are you a traveller or going en-route where a delivery is needed? This category is for you as you can login as a delivery person and get a parcel delivered without owning a vehicle",
-    },
-    {
-        img: "",
-        header: "Bike",
-        content: "",
-    },
-    {
-        img: "",
-        header: "Car",
-        content: "",
-    },
-    {
-        img: "",
-        header: "Truck",
-        content: "",
-    },
-]
