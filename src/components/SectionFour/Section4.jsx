@@ -17,13 +17,12 @@ import 'aos/dist/aos.css';
 import Button from '../Button/Button'
 
 // Image
-// import Mockup from '../../assets/DownloadMockup.svg'
-import Mockup2 from '../../assets/Mockup2.svg'
-import Self from '../../assets/Self-carriage2.svg'
-import Truck from '../../assets/Truck2.svg'
-import Bike from '../../assets/Bike2.svg'
-import Car from '../../assets/Car2.svg'
-import Cycle from '../../assets/Cycle2.svg'
+import Mockup from '../../assets/DownloadMockup.png'
+import Self from '../../assets/self-carriage.png'
+import Truck from '../../assets/truck.png'
+import Bike from '../../assets/bike.png'
+import Car from '../../assets/car.png'
+import Cycle from '../../assets/cycle.png'
 
 export default function SectionFour() {
     useEffect(() => {
@@ -34,27 +33,6 @@ export default function SectionFour() {
         <div className={s.card} data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
             <div className={s.diff}>
                 <h4>Choose your delivery mode</h4>
-
-                {/* <div className={s.container}>
-                    {Modes.map((mode, index) => {
-                        return (
-                            <Swiper
-                                spaceBetween={50}
-                                slidesPerView={3}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                <SwiperSlide>
-                                    <div key={index} className={s.item}>
-                                        <div className={s.icon}></div>
-                                        <h6>{mode.header}</h6>
-                                        <p>{mode.content}</p>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        )
-                    })}
-                </div> */}
 
                 <div className={s.container}>
                     <div className={s.item}>
@@ -104,11 +82,7 @@ export default function SectionFour() {
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={0}
                         slidesPerView={1}
-                        // navigation
                         pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
-                    // onSlideChange={() => console.log('slide change')}
-                    // onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide>
                             <div className={s.item}>
@@ -164,23 +138,6 @@ export default function SectionFour() {
 
             </div>
 
-            {/* <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide><div className={s.item}>
-                    <div className={s.icon}></div>
-                    <h6>Legediz</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptatum.</p>
-                </div></SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                ...
-            </Swiper> */}
-
             {/* <div className={s.stats}>
                 <div>
                     <h6>100+</h6>
@@ -209,7 +166,7 @@ export default function SectionFour() {
                     </div>
                 </div>
 
-                <img className={s.mockup__img} src={Mockup2} alt="mockup" data-aos="fade-up"  data-aos-duration="2500" data-aos-easing="linear" />
+                <img className={s.mockup__img} src={Mockup} alt="mockup" data-aos="fade-up"  data-aos-duration="2500" data-aos-easing="linear" />
 
             </div>
         </div>

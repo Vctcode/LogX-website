@@ -8,7 +8,6 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Faq from './pages/Faq/Faq'
 import Privacy from './pages/Privacy/Privacy'
-import { HashLink } from 'react-router-hash-link'
 import ScrollToTop from './components/ScrollToTop'
 import AboutUs from './pages/AboutUs/AboutUs'
 

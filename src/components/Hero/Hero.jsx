@@ -8,8 +8,6 @@ import 'aos/dist/aos.css';
 import Button from '../Button/Button'
 
 // Images
-// import HeroImg from '../../assets/hero.svg'
-// import HeroImg from '../../assets/hero-mockup.svg';
 import HeroImg from '../../assets/hero-mockup.png';
 
 
@@ -36,6 +34,7 @@ export default function Hero() {
             <div className={hero.box} data-aos="fade-up" data-aos-duration="1800" data-aos-easing="ease-in-sine">
                 <img src={HeroImg} alt="log-x" />
             </div>
+
 
         </div>
     )

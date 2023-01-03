@@ -75,7 +75,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 70px 80px;
-  /* margin-top: 100px; */
   background-color: #eeb319;
 }
 
@@ -90,12 +89,11 @@
 
 .sec__two .mockup__img {
   position: absolute;
-  width: 420px;
-  height: 550px;
-  bottom: -180px;
+  width: 250px;
+  height: 500px;
+  bottom: -150px;
   right: 100px;
   z-index: 0;
-  /* transform: rotate(15deg); */
 }
 
 @media screen and (max-width: 900px) {
