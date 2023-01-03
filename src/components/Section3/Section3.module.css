@@ -5,7 +5,7 @@
 
 .ctn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 100px;
   text-align: left;
@@ -21,6 +21,7 @@
   height: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .img {
@@ -28,7 +29,11 @@
 }
 
 .textBox {
-  flex-basis: 50%;
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardHeader {

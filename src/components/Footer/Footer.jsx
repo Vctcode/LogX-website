@@ -1,5 +1,7 @@
-import ft from './Footer.module.css'
 import { IconContext } from 'react-icons'
+// Styles
+import ft from './Footer.module.css'
+
 // Images
 import Logo from '../../assets/logx-logo.svg'
 import { Link } from 'react-router-dom'
