@@ -21,11 +21,13 @@ export default function Navbar() {
 
     return (
         <nav className={nav.navbar}>
-            <img
+            
+            <a href="#" className={nav.logo}><img
                 src={Logo}
                 alt="Log-x logo"
                 className={nav.logo}
-            />
+            /></a>
+            
             <ul className={nav.navlist}>
                 <li><Link to="/" >Home</Link></li>
                 {/* <li><HashLink to="#fts" smooth>Features</HashLink></li> */}

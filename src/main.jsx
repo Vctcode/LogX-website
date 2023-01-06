@@ -17,7 +17,7 @@ import AboutUs from './pages/AboutUs/AboutUs'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <IconContext.Provider value={{ color: '#fff', size: '34px', }}>
+    <IconContext.Provider value={{ color: '#fff', size: '30px', }}>
 
       <Router>
         <Navbar />
@@ -33,7 +33,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* <SectionTwo /> */}
 
 
-        <a href="https://api.whatsapp.com/send?phone=7013423935&text=Hello,%20I%20need%20a%20dispatch%20rider" className='whatsapp' ><WhatsappIcon /></a>
+        <div className='whatsapp__container'>
+        <p className='bubble'>Request for a dispatch here</p>
+        <a href="https://api.whatsapp.com/send?phone=7013423935&text=Hello,%20I%20need%20a%20dispatch%20rider" className='whatsapp' target='_blank' ><WhatsappIcon /></a>
+       
+        </div>
 
         <Footer />
       </Router>
