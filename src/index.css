@@ -5,3 +5,70 @@
   font-family: "Inter", Avenir, Helvetica, Arial, sans-serif;
   font-style: normal;
 }
+
+.whatsapp {
+  display: flex;
+  z-index: 99;
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  bottom: 40px;
+  right: 40px;
+  /* padding: 12px; */
+  justify-content: center;
+  align-items: center;
+
+  background-color: #01e675;
+  color: white;
+
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #222;
+  animation: bounce 2s ease 2s 5 normal none;
+}
+
+@keyframes bounce {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
