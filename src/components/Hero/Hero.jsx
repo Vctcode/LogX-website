@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
 
             <div className={hero.box} data-aos="fade-up" data-aos-duration="1800" data-aos-easing="ease-in-sine">
-                <img src={HeroImg} alt="log-x" />
+                <img src={HeroImg} alt="logx" />
             </div>
 
 

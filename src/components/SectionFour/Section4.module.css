@@ -114,6 +114,7 @@
   .diff .mobilecontainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px 0 10px;
   }
 
@@ -128,7 +129,7 @@
 
   .sec__two {
     position: relative;
-    display: block;
+    /* display: block; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -148,6 +149,26 @@
     text-align: center;
   }
 
+  .btn__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec__two .mockup__img {
+    position: relative;
+    width: 70%;
+    height: 650px;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateX(20px);
+    margin: -60px 0 -50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .sec__two .mockup__img {
     position: relative;
     width: 100%;
@@ -157,5 +178,5 @@
     z-index: 0;
     transform: translateX(20px);
     margin: -60px 0 -50px;
-  }
+  }  
 }

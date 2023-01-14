@@ -23,7 +23,7 @@ export default function Footer() {
                     />
 
                     <p>
-                        LogX is a platform that links and connects vendors, SMEs and individuals with logistics companies and other third party logisitics service providers in no time.
+                        LogX is a platform that links and connects vendors, SMEs and individuals with logistics companies and other third party logisitics service providers in no time. We are duly registered as Log-x Technology LTD. with the corporate affairs commission, Nigeria. (RC: 1831243)
                     </p>
                 </div>
 

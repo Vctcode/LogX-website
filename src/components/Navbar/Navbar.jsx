@@ -24,7 +24,7 @@ export default function Navbar() {
             
             <a href="#" className={nav.logo}><img
                 src={Logo}
-                alt="Log-x logo"
+                alt="Logx"
                 className={nav.logo}
             /></a>
             

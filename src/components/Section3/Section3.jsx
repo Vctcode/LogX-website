@@ -16,7 +16,7 @@ export default function SectionThree() {
                 return (
                     <div key={index} className={s3.ctn} >
                         <div className={s3.imgBox}>
-                            <img src={item.img} alt="illustrator" className={s3.img} />
+                            <img src={item.img} alt="logx illustrator" className={s3.img} />
                         </div>
 
                         <div className={s3.textBox}>

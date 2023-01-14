@@ -90,4 +90,16 @@
     height: 400px;
     margin-top: 30px;
   }
+
+  .hero_section .box img {
+    width: 70%;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero_section .box img {
+    width: 100%;
+    margin: 0;
+  }
 }
